@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "../styles/animations.css";
 
 :root {
   --background: #8f9660;
@@ -8,20 +9,32 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-inter);
+  --font-sans: var(--font-manrope);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: clip;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-inter), sans-serif;
+  font-family: var(--font-manrope), sans-serif;
   line-height: 1.5;
 }
 
 h1,
 h2,
-h3 {
-  font-family: var(--font-space-grotesk), sans-serif;
+h3,
+h4 {
+  font-family: var(--font-cormorant), serif;
+  letter-spacing: -0.02em;
 }
 
 a,
