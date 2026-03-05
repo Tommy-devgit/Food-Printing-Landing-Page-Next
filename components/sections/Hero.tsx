@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import gsap from "gsap";
 import Button from "@/components/ui/Button";
 import Badge from "@/components/ui/Badge";
@@ -9,6 +10,11 @@ import Parallax from "@/components/animations/Parallax";
 
 export default function Hero() {
   const root = useRef<HTMLDivElement>(null);
+  const flavors = [
+    { name: "Matcha Berry", time: "7m 20s", kcal: "220 kcal" },
+    { name: "Protein Mocha", time: "5m 50s", kcal: "260 kcal" },
+    { name: "Cocoa Vanilla", time: "6m 35s", kcal: "240 kcal" },
+  ];
 
   useEffect(() => {
     if (!root.current) return;
@@ -36,17 +42,26 @@ export default function Hero() {
             </Parallax>
 
             <div className="relative z-10 mx-auto mt-8 w-full max-w-3xl">
-              <div className="relative mx-auto h-72 w-48 rounded-[2.4rem] border border-[#d9dfc9]/30 bg-[linear-gradient(180deg,#b4d28f_0%,#38622f_18%,#7d2f56_44%,#ede9dd_70%,#5e7f3f_100%)] shadow-[0_30px_70px_rgba(7,10,4,0.65)] md:h-96 md:w-60">
+              <div className="relative mx-auto h-72 w-48 overflow-hidden rounded-[2.4rem] border border-[#d9dfc9]/30 shadow-[0_30px_70px_rgba(7,10,4,0.65)] md:h-96 md:w-60">
+                <Image src="/images/hero/matcha-cup.svg" alt="Food printed matcha dessert cup" fill className="object-cover" />
                 <div className="absolute inset-x-5 top-3 h-6 rounded-full border border-[#f5f5ed]/35" />
                 <div className="absolute inset-x-8 bottom-14 rounded-lg bg-[#f0eddc]/16 px-3 py-1 text-center text-xs tracking-wide text-[#f5f4ec]">
                   Original
                 </div>
               </div>
 
-              <div data-float className="absolute left-0 top-24 h-24 w-24 -translate-x-1/4 rotate-[-18deg] rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32" />
-              <div data-float className="absolute left-[16%] top-8 h-24 w-24 rotate-[14deg] rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32" />
-              <div data-float className="absolute right-[18%] top-10 h-24 w-24 rotate-[-12deg] rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32" />
-              <div data-float className="absolute right-0 top-24 h-24 w-24 translate-x-1/4 rotate-[17deg] rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32" />
+              <div data-float className="absolute left-0 top-24 h-24 w-24 -translate-x-1/4 rotate-[-18deg] overflow-hidden rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32">
+                <Image src="/images/hero/berry.svg" alt="Berry ingredient card" fill className="object-cover" />
+              </div>
+              <div data-float className="absolute left-[16%] top-8 h-24 w-24 rotate-[14deg] overflow-hidden rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32">
+                <Image src="/images/hero/strawberry.svg" alt="Strawberry ingredient card" fill className="object-cover" />
+              </div>
+              <div data-float className="absolute right-[18%] top-10 h-24 w-24 rotate-[-12deg] overflow-hidden rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32">
+                <Image src="/images/hero/blueberry.svg" alt="Blueberry ingredient card" fill className="object-cover" />
+              </div>
+              <div data-float className="absolute right-0 top-24 h-24 w-24 translate-x-1/4 rotate-[17deg] overflow-hidden rounded-3xl border border-[#dfe3cf]/80 bg-[#f4f1e3] shadow-[0_16px_30px_rgba(0,0,0,0.25)] md:h-32 md:w-32">
+                <Image src="/images/hero/cherry.svg" alt="Cherry ingredient card" fill className="object-cover" />
+              </div>
               <div className="pointer-events-none absolute bottom-0 left-1/2 h-28 w-[20rem] -translate-x-1/2 rounded-[100%] bg-[#334726] blur-3xl md:h-36 md:w-[30rem]" />
             </div>
 
@@ -63,6 +78,15 @@ export default function Hero() {
                 <Button href="/demo" className="border border-[#d8dcc1] bg-[#5a6438]/60 text-[#f6f5ec] hover:bg-[#657244]">
                   Watch Demo
                 </Button>
+              </div>
+              <div className="mx-auto mt-6 grid max-w-3xl gap-3 text-left sm:grid-cols-3">
+                {flavors.map((flavor) => (
+                  <div key={flavor.name} className="rounded-2xl border border-[#899561] bg-[#4c5736]/80 p-3">
+                    <p className="text-sm font-semibold text-[#f6f5ec]">{flavor.name}</p>
+                    <p className="mt-1 text-xs text-[#dfdbc6]">Print {flavor.time}</p>
+                    <p className="text-xs text-[#dfdbc6]">{flavor.kcal}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

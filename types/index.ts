@@ -7,6 +7,7 @@ export type NavItem = {
 export type Feature = {
   title: string;
   description: string;
+  image: string;
 };
 
 export type Stat = {
@@ -25,4 +26,5 @@ export type Testimonial = {
   name: string;
   role: string;
   quote: string;
+  image: string;
 };

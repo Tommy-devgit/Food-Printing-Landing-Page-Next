@@ -3,6 +3,7 @@ import Container from "@/components/layout/Container";
 import Card from "@/components/ui/Card";
 import SectionTitle from "@/components/ui/SectionTitle";
 import { features } from "@/lib/constants";
+import Image from "next/image";
 
 export default function Features() {
   return (
@@ -13,6 +14,9 @@ export default function Features() {
           {features.map((feature, i) => (
             <FadeIn key={feature.title} delay={i * 0.08}>
               <Card>
+                <div className="relative mb-4 aspect-[16/9] overflow-hidden rounded-2xl border border-[#7e8956]">
+                  <Image src={feature.image} alt={feature.title} fill className="object-cover" />
+                </div>
                 <h3 className="text-xl font-semibold text-[#f8f6ee]">{feature.title}</h3>
                 <p className="mt-3 text-sm text-[#ebe8d6]">{feature.description}</p>
               </Card>

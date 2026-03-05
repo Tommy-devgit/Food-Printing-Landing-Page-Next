@@ -10,7 +10,7 @@ export default function Pricing() {
       <Container>
         <SectionTitle eyebrow="Pricing" title="Choose Your Food Printer" />
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {plans.map((plan) => (
+          {plans.map((plan, index) => (
             <Card key={plan.name} className="flex h-full flex-col">
               <p className="text-xs uppercase tracking-[0.18em] text-[#dddac5]">Plan</p>
               <h3 className="mt-2 text-2xl font-semibold text-[#f8f6ee]">{plan.name}</h3>
@@ -21,7 +21,9 @@ export default function Pricing() {
                   <li key={item}>- {item}</li>
                 ))}
               </ul>
-              <Button href="/contact" className="mt-6 w-fit">Reserve</Button>
+              <Button href={`/contact?plan=${index + 1}`} className="mt-6 w-fit">
+                Reserve
+              </Button>
             </Card>
           ))}
         </div>
