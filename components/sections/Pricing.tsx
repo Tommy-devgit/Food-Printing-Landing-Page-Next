@@ -8,7 +8,7 @@ export default function Pricing() {
   return (
     <section className="py-16 md:py-20">
       <Container>
-        <SectionTitle eyebrow="Pricing" title="Choose Your Food Printer" />
+        <SectionTitle eyebrow="Pricing" title="Choose Your Food Printer (ETB)" />
         <div className="mt-8 grid gap-4 md:grid-cols-3">
           {plans.map((plan, index) => (
             <Card key={plan.name} className="flex h-full flex-col">

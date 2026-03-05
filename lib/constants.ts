@@ -13,7 +13,7 @@ export const stats: Stat[] = [
   { label: "Ingredients", value: "30+" },
   { label: "Layer Resolution", value: "0.5mm" },
   { label: "Avg Print Time", value: "2-10 min" },
-  { label: "Chef Teams", value: "120+" },
+  { label: "Ethiopian Kitchens", value: "120+" },
 ];
 
 export const features: Feature[] = [
@@ -45,42 +45,42 @@ export const features: Feature[] = [
 
 export const plans: Plan[] = [
   {
-    name: "Food Printer Basic",
-    price: "$699",
-    description: "For home creators and small kitchens.",
-    items: ["Printer unit", "Starter cartridges", "Companion app"],
+    name: "Home Edition",
+    price: "ETB 89,900",
+    description: "For home creators and small kitchens in Ethiopia.",
+    items: ["Printer unit", "Teff and sauce starter cartridges", "Companion app"],
   },
   {
-    name: "Food Printer Pro",
-    price: "$1,099",
+    name: "Pro Kitchen",
+    price: "ETB 139,900",
     description: "For chef teams and high-volume workflows.",
-    items: ["Dual nozzle module", "Pro analytics", "Priority support"],
+    items: ["Dual nozzle module", "Pro analytics", "Priority support in Addis Ababa"],
   },
   {
     name: "Restaurant Edition",
-    price: "$1,799",
-    description: "For multi-station operations and R and D labs.",
-    items: ["Batch queue mode", "Team workspace", "Onsite onboarding"],
+    price: "ETB 229,900",
+    description: "For multi-station operations and food labs.",
+    items: ["Batch queue mode", "Team workspace", "Onsite onboarding across Ethiopia"],
   },
 ];
 
 export const testimonials: Testimonial[] = [
   {
-    name: "Chef Marco",
-    role: "Culinary Director",
-    quote: "Food Printer cut our prep cycle and unlocked menu experiments we could not scale before.",
+    name: "Chef Hana",
+    role: "Culinary Director, Addis Ababa",
+    quote: "Food Printer cut our prep cycle and let us scale modern takes on Ethiopian flavors.",
     image: "/images/testimonials/chef-marco.svg",
   },
   {
-    name: "A. Reed",
+    name: "M. Bekele",
     role: "Bakery Owner",
-    quote: "Custom dessert designs that used to take hours now happen in minutes.",
+    quote: "Custom coffee and honey dessert designs that took hours now print in minutes.",
     image: "/images/testimonials/baker.svg",
   },
   {
-    name: "Kitchen Lab",
+    name: "Abyssinia Food Lab",
     role: "Food Tech Studio",
-    quote: "The repeatability is excellent, especially for controlled nutrition recipes.",
+    quote: "The repeatability is excellent, especially for teff-based and nutrition-focused recipes.",
     image: "/images/testimonials/lab.svg",
   },
 ];

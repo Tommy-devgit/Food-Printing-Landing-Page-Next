@@ -4,7 +4,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 const specs = [
   ["Print Time", "2-10 minutes"],
   ["Ingredients", "30+"],
-  ["Connectivity", "WiFi / App"],
+  ["Connectivity", "WiFi / App / Ethio telecom data"],
   ["Resolution", "0.5mm layers"],
   ["Cleaning", "Self-cleaning mode"],
 ];

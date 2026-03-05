@@ -13,7 +13,7 @@ export default function Demo() {
         <SectionTitle
           eyebrow="Live Demo"
           title="See The Printer In Action"
-          description="Watch real-time layer creation with ingredient switching and smooth finishing passes."
+          description="Watch real-time layer creation with teff blends, berbere sauces, and smooth finishing passes."
         />
         <motion.div
           initial={{ opacity: 0, y: 18 }}
@@ -31,7 +31,7 @@ export default function Demo() {
             />
           </div>
           <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-[#687349] bg-[#59643c] p-3">
-            <p className="text-sm text-[#f5f3e8]">Current print: Berry Matcha Cup | 68% complete</p>
+            <p className="text-sm text-[#f5f3e8]">Current print: Mini Injera Shiro Stack | 68% complete</p>
             <Button href="/contact" className="px-4 py-2 text-xs">
               Request Live Demo
             </Button>

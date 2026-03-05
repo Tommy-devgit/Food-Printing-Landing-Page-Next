@@ -7,11 +7,11 @@ import Card from "@/components/ui/Card";
 import Image from "next/image";
 
 const stages = [
-  "Image capture and dish detection",
-  "Recipe graph generation",
-  "Cartridge calibration",
-  "Layer-by-layer extrusion",
-  "Final texture finishing",
+  "Image capture and Ethiopian dish detection",
+  "Recipe graph generation for teff and spice blends",
+  "Cartridge calibration for shiro, berbere, and cream",
+  "Layer-by-layer food extrusion",
+  "Final texture and plating finish",
 ];
 
 export default function DemoPage() {
@@ -22,7 +22,7 @@ export default function DemoPage() {
           <SectionTitle
             eyebrow="Demo"
             title="Interactive Product Walkthrough"
-            description="Explore each stage of the print process and preview timing, layer strategy, and ingredient transitions."
+            description="Explore each stage of the print process and preview timing, layer strategy, and Ethiopian ingredient transitions."
           />
           <div className="mt-8 grid gap-4 lg:grid-cols-2">
             <div className="overflow-hidden rounded-3xl border border-[#727b4c] bg-[#4f5738] p-4">

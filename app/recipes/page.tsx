@@ -5,12 +5,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import CTA from "@/components/sections/CTA";
 
 const recipes = [
-  { name: "Matcha Berry Cup", time: "7m 20s", difficulty: "Easy", image: "/images/hero/matcha-cup.svg" },
-  { name: "Protein Mocha Ring", time: "6m 05s", difficulty: "Medium", image: "/images/hero/cherry.svg" },
-  { name: "Vanilla Swirl Bite", time: "5m 34s", difficulty: "Easy", image: "/images/hero/blueberry.svg" },
-  { name: "Cocoa Nut Crunch", time: "8m 12s", difficulty: "Advanced", image: "/images/hero/berry.svg" },
-  { name: "Berry Gel Layers", time: "6m 48s", difficulty: "Medium", image: "/images/hero/strawberry.svg" },
-  { name: "Chef Signature Plate", time: "9m 40s", difficulty: "Advanced", image: "/images/hero/matcha-cup.svg" },
+  { name: "Mini Injera Shiro Roll", time: "7m 20s", difficulty: "Easy", image: "/images/hero/matcha-cup.svg" },
+  { name: "Doro Wot Canape", time: "6m 05s", difficulty: "Medium", image: "/images/hero/cherry.svg" },
+  { name: "Kitfo Protein Bite", time: "5m 34s", difficulty: "Easy", image: "/images/hero/blueberry.svg" },
+  { name: "Tibs Spice Stack", time: "8m 12s", difficulty: "Advanced", image: "/images/hero/berry.svg" },
+  { name: "Atmit Honey Layers", time: "6m 48s", difficulty: "Medium", image: "/images/hero/strawberry.svg" },
+  { name: "Buna Cream Dessert", time: "9m 40s", difficulty: "Advanced", image: "/images/hero/matcha-cup.svg" },
 ];
 
 export default function RecipesPage() {
@@ -20,8 +20,8 @@ export default function RecipesPage() {
         <Container>
           <SectionTitle
             eyebrow="Recipe Library"
-            title="Food Printing Recipe Presets"
-            description="Select prebuilt printable dishes, then tweak texture, calories, and plating style before production."
+            title="Ethiopian Food Printing Presets"
+            description="Select prebuilt printable Ethiopian dishes, then tweak texture, calories, and plating style before production."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {recipes.map((recipe) => (
@@ -33,7 +33,7 @@ export default function RecipesPage() {
                   <h3 className="text-xl font-semibold text-[#f8f6ee]">{recipe.name}</h3>
                   <div className="mt-2 flex items-center gap-2 text-xs uppercase tracking-wider text-[#dddac5]">
                     <span>{recipe.time}</span>
-                    <span>•</span>
+                    <span>|</span>
                     <span>{recipe.difficulty}</span>
                   </div>
                 </div>

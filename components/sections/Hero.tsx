@@ -11,9 +11,9 @@ import Parallax from "@/components/animations/Parallax";
 export default function Hero() {
   const root = useRef<HTMLDivElement>(null);
   const flavors = [
-    { name: "Matcha Berry", time: "7m 20s", kcal: "220 kcal" },
-    { name: "Protein Mocha", time: "5m 50s", kcal: "260 kcal" },
-    { name: "Cocoa Vanilla", time: "6m 35s", kcal: "240 kcal" },
+    { name: "Injera Shiro Bite", time: "7m 20s", kcal: "230 kcal" },
+    { name: "Doro Wot Layer", time: "5m 50s", kcal: "280 kcal" },
+    { name: "Buna Honey Dessert", time: "6m 35s", kcal: "250 kcal" },
   ];
 
   useEffect(() => {
@@ -67,11 +67,9 @@ export default function Hero() {
 
             <div className="relative z-10 mt-12 text-center">
               <Badge>AI Powered Food Printing</Badge>
-              <h1 className="mt-5 text-4xl font-semibold leading-tight text-[#f8f7f0] md:text-6xl">
-                Print Food From A Photo
-              </h1>
+              <h1 className="mt-5 text-4xl font-semibold leading-tight text-[#f8f7f0] md:text-6xl">Print Ethiopian Food From A Photo</h1>
               <p className="mx-auto mt-4 max-w-2xl text-sm text-[#e2e0cd] md:text-base">
-                Turn any dish image into a real edible print in minutes with AI recipe generation and precision food printing.
+                Turn dishes like injera rolls, shiro bites, and coffee desserts into real edible prints in minutes with AI recipe generation.
               </p>
               <div className="mt-7 flex flex-wrap items-center justify-center gap-3">
                 <Button href="/pricing">Pre-Order Now</Button>

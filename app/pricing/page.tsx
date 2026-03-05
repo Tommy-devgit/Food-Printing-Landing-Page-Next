@@ -6,7 +6,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Card from "@/components/ui/Card";
 
 const comparisons = [
-  { label: "Monthly Recipe Updates", basic: "Yes", pro: "Yes", restaurant: "Priority" },
+  { label: "Monthly Ethiopian Recipe Updates", basic: "Yes", pro: "Yes", restaurant: "Priority" },
   { label: "Remote Fleet Controls", basic: "No", pro: "Basic", restaurant: "Advanced" },
   { label: "Dedicated Onboarding", basic: "No", pro: "Remote", restaurant: "Onsite" },
 ];
@@ -18,21 +18,21 @@ export default function PricingPage() {
         <Container>
           <SectionTitle
             eyebrow="Plans"
-            title="Pricing For Every Kitchen Scale"
-            description="Start with a personal unit or roll out a multi-team setup for commercial workflows."
+            title="Pricing In ETB For Every Kitchen Scale"
+            description="Start with a personal unit or roll out a multi-team setup for Ethiopian commercial workflows."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-3">
             <Card>
               <p className="text-xs uppercase tracking-wider text-[#dddac5]">Starter</p>
-              <p className="mt-2 text-lg text-[#f6f4ea]">Best for creators and cafe prototypes.</p>
+              <p className="mt-2 text-lg text-[#f6f4ea]">Best for home creators and cafe prototypes in Addis Ababa.</p>
             </Card>
             <Card>
               <p className="text-xs uppercase tracking-wider text-[#dddac5]">Scale</p>
-              <p className="mt-2 text-lg text-[#f6f4ea]">Great for teams that print daily menu variations.</p>
+              <p className="mt-2 text-lg text-[#f6f4ea]">Great for teams printing daily menu variations like injera bites and desserts.</p>
             </Card>
             <Card>
               <p className="text-xs uppercase tracking-wider text-[#dddac5]">Enterprise</p>
-              <p className="mt-2 text-lg text-[#f6f4ea]">Designed for multi-location and lab-grade operations.</p>
+              <p className="mt-2 text-lg text-[#f6f4ea]">Designed for multi-location hotels, restaurants, and labs across Ethiopia.</p>
             </Card>
           </div>
         </Container>

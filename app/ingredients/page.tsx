@@ -5,12 +5,12 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import CTA from "@/components/sections/CTA";
 
 const ingredients = [
-  { name: "Chocolate Blend", profile: "Desserts", image: "/images/hero/berry.svg" },
-  { name: "Protein Mix", profile: "Nutrition", image: "/images/hero/blueberry.svg" },
-  { name: "Fruit Gel Base", profile: "Cold prints", image: "/images/hero/strawberry.svg" },
-  { name: "Dough Cartridge", profile: "Bakery", image: "/images/hero/cherry.svg" },
-  { name: "Cream Foam", profile: "Cafe", image: "/images/hero/matcha-cup.svg" },
-  { name: "Savory Sauce", profile: "Fine dining", image: "/images/hero/berry.svg" },
+  { name: "Teff Dough Blend", profile: "Injera and rolls", image: "/images/hero/berry.svg" },
+  { name: "Shiro Protein Mix", profile: "High-protein plates", image: "/images/hero/blueberry.svg" },
+  { name: "Berbere Sauce Base", profile: "Spiced savory prints", image: "/images/hero/strawberry.svg" },
+  { name: "Niter Kibbeh Aroma Oil", profile: "Signature finish", image: "/images/hero/cherry.svg" },
+  { name: "Ayib Cream Mix", profile: "Dessert and cafe", image: "/images/hero/matcha-cup.svg" },
+  { name: "Buna Honey Glaze", profile: "Coffee desserts", image: "/images/hero/berry.svg" },
 ];
 
 export default function IngredientsPage() {
@@ -20,8 +20,8 @@ export default function IngredientsPage() {
         <Container>
           <SectionTitle
             eyebrow="Ingredients"
-            title="Cartridge-Compatible Ingredient System"
-            description="Certified printable blends designed for stable extrusion, clean transitions, and consistent flavor."
+            title="Cartridge-Compatible Ingredients For Ethiopia"
+            description="Printable blends inspired by Ethiopian cooking, designed for stable extrusion and consistent flavor."
           />
           <div className="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
             {ingredients.map((ingredient) => (

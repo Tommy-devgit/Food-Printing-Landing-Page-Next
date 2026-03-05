@@ -9,7 +9,7 @@ export default function Footer() {
           <div>
             <p className="text-xl font-semibold text-[#f3f1e6]">FoodPrinter Labs</p>
             <p className="mt-3 max-w-xs text-sm text-[#dedbc8]">
-              AI-native food printing platform for creators, restaurants, and nutrition teams.
+              AI-native food printing platform for creators, restaurants, and nutrition teams across Ethiopia.
             </p>
           </div>
 
@@ -35,11 +35,11 @@ export default function Footer() {
 
           <div>
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-[#f2efe2]">Newsletter</p>
-            <p className="mt-3 text-sm text-[#dedbc8]">Get monthly food printing playbooks and launch updates.</p>
+            <p className="mt-3 text-sm text-[#dedbc8]">Get monthly Ethiopian food-printing playbooks and launch updates.</p>
             <form className="mt-4 flex gap-2">
               <input
                 type="email"
-                placeholder="you@kitchen.com"
+                placeholder="you@kitchen.et"
                 className="w-full rounded-xl border border-[#6e784a] bg-[#5a6440] px-3 py-2 text-sm text-white outline-none placeholder:text-[#d8d6c3]"
               />
               <button
@@ -53,7 +53,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-10 border-t border-[#647047] pt-5 text-xs text-[#d6d2bc]">
-          <p>© 2026 FoodPrinter Labs. Built for modern food creation.</p>
+          <p>(c) 2026 FoodPrinter Labs. Built for modern Ethiopian food creation.</p>
         </div>
       </Container>
     </footer>
