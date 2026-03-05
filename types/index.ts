@@ -1,7 +1,7 @@
 export type NavItem = {
   href: string;
   label: string;
-  icon: "Home" | "Play" | "BadgeDollarSign" | "Mail";
+  icon: "Home" | "Cpu" | "ChefHat" | "Play" | "BadgeDollarSign" | "Mail";
 };
 
 export type Feature = {

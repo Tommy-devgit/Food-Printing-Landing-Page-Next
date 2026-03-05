@@ -2,13 +2,15 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { BadgeDollarSign, Home, Mail, Play } from "lucide-react";
+import { BadgeDollarSign, ChefHat, Cpu, Home, Mail, Play } from "lucide-react";
 import Container from "@/components/layout/Container";
 import { navItems } from "@/lib/constants";
 import { cn } from "@/lib/utils";
 
 const iconMap = {
   Home,
+  Cpu,
+  ChefHat,
   Play,
   BadgeDollarSign,
   Mail,
@@ -25,7 +27,7 @@ export default function Navbar() {
         </Link>
 
         <nav className="rounded-2xl border border-[#95a06b] bg-[#5d663d]/75 p-1.5">
-          <ul className="flex items-center gap-1.5">
+          <ul className="flex items-center gap-1">
             {navItems.map((item) => {
               const Icon = iconMap[item.icon];
               const active = pathname === item.href;
@@ -34,7 +36,7 @@ export default function Navbar() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "group flex h-10 w-10 items-center justify-center rounded-xl border border-transparent text-[#f4f2e7] transition",
+                      "group flex h-9 w-9 items-center justify-center rounded-lg border border-transparent text-[#f4f2e7] transition md:h-10 md:w-10",
                       active ? "bg-[#1d2617]" : "hover:bg-[#687347]"
                     )}
                     aria-label={item.label}

@@ -2,6 +2,8 @@ import type { Feature, NavItem, Plan, Stat, Testimonial } from "@/types";
 
 export const navItems: NavItem[] = [
   { href: "/", label: "Home", icon: "Home" },
+  { href: "/technology", label: "Technology", icon: "Cpu" },
+  { href: "/recipes", label: "Recipes", icon: "ChefHat" },
   { href: "/demo", label: "Demo", icon: "Play" },
   { href: "/pricing", label: "Pricing", icon: "BadgeDollarSign" },
   { href: "/contact", label: "Contact", icon: "Mail" },
